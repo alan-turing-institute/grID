@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<!DOCTYPE wml PUBLIC "-//WAPFORUM//DTD WML 1.3//EN" "http://www.wapforum.org/DTD/wml13.dtd">
+<!-- Vasilios Mavroudis, Alan Turing Institute, 2021 -->
+<wml>
+  
+  <template>
+    <do name="main_menu" type="accept" label="Homepage">
+      <go href="#home"/>
+    </do>
+    <do name="id" type="accept" label="ID Services">
+      <go href="idservices.wml"/>
+    </do>
+    <do name="menu_2" type="accept" label="Subsidy">
+      <go href="#subsidy"/>
+    </do>
+    <do name="menu_3" type="accept" label="Mail">
+      <go href="#mail"/>
+    </do>
+    <do name="menu_4" type="accept" label="Info">
+      <go href="#info"/>
+    </do>
+  </template>
+  
+  
+  
+  <card id="home" title="Services">
+		<p><br/>
+		<em>Select a service from the 'Options' menu.</em><br/>
+		</p>
+  </card>
+
+
+
+  <card id="subsidy" title="Subsidy Voucher">
+	<p align="center">
+     <img src="qrcodes/voucher.wbmp" alt="voucher"/>
+    </p>
+  </card>
+
+  <card id="mail" title="Mail">
+    <p>Vasilis, there is a parcel 
+	  with number <em>12549681</em>
+	  for you at the post office!
+	  <br/>
+      
+    </p>
+  </card>
+
+  <card id="info" title="Info">
+    <p>
+      <em>Vasilios Mavroudis, Trustworthy Digital Identity project, Alan Turing Institute.</em>
+    </p>
+  </card>
+</wml>

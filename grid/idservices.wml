@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<!DOCTYPE wml PUBLIC "-//WAPFORUM//DTD WML 1.3//EN" "http://www.wapforum.org/DTD/wml13.dtd">
+<!-- Vasilios Mavroudis, Alan Turing Institute, 2021 -->
+<wml>
+  
+  <template>
+    <do name="main_menu" type="accept" label="Homepage">
+      <go href="services.wml"/>
+    </do>
+    <do name="idfull" type="accept" label="Full ID">
+      <go href="#idfull"/>
+    </do>
+    <do name="id18" type="accept" label="18+">
+      <go href="#id18"/>
+    </do>
+	<do name="idstatus" type="accept" label="Status">
+      <go href="#idstatus"/>
+    </do>	  
+    <do name="vaccination" type="accept" label="Vaccination Record">
+      <go href="#vaccination"/>
+    </do>
+    <do name="data" type="accept" label="User Data">
+      <go href="#data"/>
+    </do>
+	<do name="request" type="accept" label="Update Request">
+      <go href="#request"/>
+    </do>
+  </template>
+  
+  
+  
+  <card id="home" title="Identity Services">
+		<p>
+		<br/>
+		<em>Select a service from the 'Options' menu.</em>
+		<br/>
+		</p>
+  </card>
+
+  <card id="idfull" title="Full ID">
+    <p align="center">
+		<img src="qrcodes/idqr.wbmp" alt="idfull"/>
+    </p>
+  </card>
+
+  <card id="vaccination" title="">
+	<p>
+	<em>Name:</em> Vasilios Mavroudis<br/>
+	<em>Date of Birth:</em> 30/2/1989<br/>
+	<em>1st Dose:</em> Pfizer EK5730, 16/12/2020<br/>
+	<em>2nd Dose:</em> Pfizer EK8415, 16/01/2020<br/>
+	</p>
+	<p align="center">
+		<img src="qrcodes/covid.wbmp" alt="vaccineqr"/>
+    </p>
+	
+  </card>
+
+  <card id="id18" title="18+ Proof">
+    <p align="center">
+		<img src="qrcodes/id18qr.wbmp" alt="id18"/>
+    </p>
+  </card>
+  
+  <card id="idstatus" title="Status Proof">
+  </card>
+  
+  <card id="data" title="User Data">.
+  </card>  
+
+  <card id="request" title="Update Request">
+  </card>  
+
+</wml>
