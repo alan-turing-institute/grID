@@ -93,6 +93,8 @@ To deploy the prototype, simply upload the files (maintaining the directory stru
 
 As noted above, this is a prototype and thus far from production-ready. Some security issues that need to be taken care of before deploying it in production (besides the 'standard' php exploitation flaws etc): Ensure (on the proof verifier end) that the URL encoded in the QR code points to the trusted digital ID service provider, otherwise ignore the URL. Moreover, the current version does not perform a proper login and should be instead hooked on whatever authentication service is used. Note that captchas can be easily recreated with wbmp for feature-phones. Ensure that the URLs leading to identity proofs can be used only once to avoid replay attacks (enforced on the server side). Consequently, the URL should not point to the `wbmp` but rather to a php script that generates the QR code wbmp on-the-fly (i.e., check that the user is logged in, generate the proof, and embed the URL to the proof in the QR code) and returns it to the users browser.
 
+The technical requirements are outlined here: https://github.com/alan-turing-institute/grID/blob/main/tech_requirements.pdf
+
 ## Acknowledgements
 
 This work was supported, in whole or in part, by the Bill & Melinda Gates Foundation [INV-001309].
